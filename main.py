@@ -1,7 +1,6 @@
 from main import app,api
 from main.emp_resource import Employee
 from main import db
-
 db.create_all()
 api.add_resource(Employee, "/employee1/<int:emp_id>")
 
